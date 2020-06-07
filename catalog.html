@@ -10,7 +10,7 @@
 		<div class="header">
 			<div class="container">
 				<a class="header-logo">Техномарт
-					<img src="#" alt="" width="" height="">
+					<img src="img/logo.svg" alt="Логотип Техномарта" width="220" height="47">
 				</a>
 				<form action="" class="search-form">
 					<input type="search" class="search-input" id="search" placeholder="Поиск">
@@ -37,8 +37,8 @@
 			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		</div>
 		<div class="1">
-			<a href="#" class="1">Равшан Джамшутович</a>
-			<a href="#" class="1"></a>
+			<a href="#">Равшан Джамшутович</a>
+<!-- 			<a href="#" class="1"></a> -->
 		</div>
 		<ul class="1">
 			<li class="1">
@@ -50,6 +50,7 @@
 		</ul>
 		
 	</div>
+
 	<nav class="1">
 		<ul class="1">
 			<li class="1"><a href="#" class="1">Главная</a></li>
@@ -77,14 +78,69 @@
 		</li>
 	</ul>
 	<section class="1">
-		<h2 class="1">Перфораторы</h2>
 		<div class="1">
-			<form action="" class="1">
+		<h2 class="1">Перфораторы</h2>
+		</div>
+
+
+		<div class="1">
+
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 				<div class="1">
-					<h3 class="1"></h3>
+					<h3>Фильтр:</h3>
 				</div>
-				<!-- 3 fieldset -->
-			</form>
+
+					<fieldset class="1">
+						<legend class="1">Цена</legend>
+						<div class="1">
+							<div class="1">
+								<button class="1" type="button"></button>
+									<div class="1"></div>
+										<button class="1" type="button"></button>
+						</div>
+				</div>
+				<p class="1">
+				<label for="" class="1">
+					<input class="" type="number" name="min" value="0" step="100" min="0" max="30000"></input>
+					<span class="visually-hidden">Минимальная цена </span>
+				</label>
+				<span class=""> - </span>
+					<label for="" class="1">
+					<input class="" type="number" name="max" value="30000" step="100" min="0" max="30000"></input>
+					<span class="visually-hidden">Максимальная цена </span>
+				</label>
+
+				</p>
+					<!--  -->
+					<div class="1">
+						<fieldset class="1">
+						<legend class="1">Производители</legend>
+						<ul class="1">
+							<li class="1">
+								<input type="checkbox" name="bosch" id="filter-bosch" checked><label for="filter-bosch">bosch</label></li>
+								<li class="1"><input type="checkbox" name="interskol" id="filter-interskol"><label for="filter-interskol">Интерскол</label></li>
+								<li class="1"><input type="checkbox" name="makita" id="filter-makita" checked><label for="filter-makita">makita</label></li>
+								<li class="1"><input type="checkbox" name="dewolt" id="filter-dewolt"><label for="filter-dewolt">dewolt</label></li>
+								<li class="1"><input type="checkbox" name="hitachi" id="filter-hitachi"><label for="filter-hitachi">hitachi</label></li>
+							</ul>
+							</fieldset>
+						</div>
+						<div class="1">
+							<fieldset class="1">
+						<legend class="1">Питание</legend>
+							<ul class="1">
+								<li class="1"><input type="radio" name="power-supply" value="rechargeable battery" id="filter-shave">
+									<label for="filter-shave">Аккумуляторные</label></li>
+									<li class="1"><input type="radio" name="power-supply" value="network" id="filter-shave">
+										<label for="filter-shave">Сетевые</label></li>
+									</ul>
+                           </fieldset>
+									<button type="submit">Показать</button>
+								</div>
+							</form>
+						</div>
+					</section>
+
 		</div>
 		<div class="1">
 			<div class="1">
