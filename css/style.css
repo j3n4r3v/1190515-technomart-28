@@ -1018,7 +1018,14 @@ padding-left: 37px;
     text-decoration : none;
   }
 
+.company__info {
+  width: 227px;
+      color : var(--basic-white);
+      margin: 0;
+}
+
   .developer__info {
+          margin: 0;
     color : var(--basic-white);
   }
 
