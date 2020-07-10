@@ -64,13 +64,13 @@
 			<div class="container header__wrapper-bottom">
 				<nav>
 					<ul class="site__navigation-catalog">
-						<li ><a class="site__navigation-link" href="index.html" >Главная</a></li>
-						<li ><a class="site__navigation-link" href="#" >Компания</a></li>
-						<li ><a class="site__navigation-link" href="catalog.html" >Каталог</a></li>
-						<li ><a class="site__navigation-link" href="#" >Новости</a></li>
-						<li ><a class="site__navigation-link" href="#" >Спецпредложения</a></li>
-						<li ><a class="site__navigation-link" href="#" >Доставка</a></li>
-						<li><a class="site__navigation-link" href="#" >Контакты</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link first__menu-link" href="index.html" >Главная</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link" href="#" >Компания</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link" href="catalog.html" >Каталог</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link" href="#" >Новости</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link" href="#" >Спецпредложения</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link" href="#" >Доставка</a></li>
+						<li class="site__navigation-item"><a class="site__navigation-link last__menu-link" href="#" >Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -94,75 +94,86 @@
 				</ul>
 				<h1 class="perforators">Перфораторы</h1>
 				<div class="catalog-main">
-					<section class="filter">
+					<section class="filters">
 						<h2 class="filter-form">Фильтр:</h2>
-						<form action="https://echo.htmlacademy.ru/" method="GET">
-							<fieldset class="">
-								<legend class="filter-price">Цена:</legend>
-								<div class="">
+						<form class="filter" action="https://echo.htmlacademy.ru/" method="GET">
+							<fieldset class="fieldset__upper">
+								<legend class="filter-legend">Цена:</legend>
+								<div class="filter-price">
 									<div class="range-controls">
 										<div class="scale">
 											<div class="bar"></div>
 										</div>
-										<button type="button" class="" tabindex="0" aria-label="левый маркер"></button>
-										<button type="button" class="" tabindex="0" aria-label="правый маркер"></button>
+										<button type="button" class="toggle toggle-min" tabindex="0" aria-label="левый маркер"></button>
+										<button type="button" class="toggle toggle-max" tabindex="0" aria-label="правый маркер"></button>
 									</div>
 									<div class="price-controls">
 										<label class="visually-hidden" for="min-price" >start price</label> 
-										<input class="price-input" id="min-price" type="number" name="min-price" value="0">
-										<span>—</span>
+										<input class="price-input" id="min-price" type="text" name="min-price" value="0">
+										<span class="price-scale"></span>
 										<label class="visually-hidden" for="max-price" >end price</label> 
-										<input class="price-input" id="max-price" type="number" name="max-price" value="30000">
+										<input class="price-input" id="max-price" type="text" name="max-price" value="30000">
 									</div>
 								</div>
 							</fieldset>
-							<fieldset class="">
+							<fieldset class="fieldset__middle">
 								<legend class="filter-manufacturers">Производители</legend>
-								<p class="filter-item">
-									<input class="" type="checkbox" id ="bosch" name="maker" value="bosch" checked>
-									<span class=""></span>
+								<ul class="filter__list-checkbox">
+                  <li>
+                    <label class="filter-item">
+                      <input class="visually-hidden input-checkbox" type="checkbox" value="Bosch" name="companies-list" checked>
+                      <span class="checkbox-indicator">Bosch</span>
+                    </label>
+                  </li>
 
-									<label class="" for="bosch">Bosch</label>
-								</p>
-								<p class="filter-item">
-									<input class="" type="checkbox" id ="interscol" name="" value="interscol">
-									<span class=""></span>
+                  <li>
+                    <label class="filter-item">
+                      <input class="visually-hidden input-checkbox" type="checkbox" value="Interskol" name="companies-list">
+                      <span class="checkbox-indicator">Интерскол</span>
+                    </label>
+                  </li>
 
-									<label class="" for="interscol">Интерскол</label>
-								</p>
-								<p class="filter-item">
-									<input class="" type="checkbox" id ="makita" name="" value="makita" checked>
-									<span class=""></span>
+                  <li>
+                    <label class="filter-item">
+                      <input class="visually-hidden input-checkbox" type="checkbox" value="Makita" name="companies-list" checked>
+                      <span class="checkbox-indicator">Makita</span>
+                    </label>
+                  </li>
 
-									<label class="" for="">Makita</label>
-								</p>
-								<p class="filter-item">
-									<input class="" type="checkbox" id ="dewalt" name="" value="dewalt">
-									<span class=""></span>
+                  <li>
+                    <label class="filter-item">
+                      <input class="visually-hidden input-checkbox" type="checkbox" value="Dewalt" name="companies-list" disabled>
+                      <span class="checkbox-indicator">Dewalt</span>
+                    </label>
+                  </li>
 
-									<label class="" for="">DeWalt</label>
-								</p>
-								<p class="filter-item">
-									<input class="" type="checkbox" id ="hitachi" name="" value="hitachi">
-									<span class=""></span>
+                  <li>
+                  	<label class="filter-item">
+                  		<input class="visually-hidden input-checkbox" type="checkbox" value="Hitachi" name="companies-list" checked disabled>
+                  		<span class="checkbox-indicator">Hitachi</span>
+                  	</label>
+                  </li>
 
-									<label class="" for="">Hitachi</label>
-								</p>
-							</fieldset>
-							<fieldset class="">
+                </ul>
+              </fieldset>
+				    <fieldset class="fieldset__bottom">
 								<legend class="nutrition">Питание</legend>
-								<p class="filter-item">
-									<input class="" type="radio" name="radio" id="" value="" checked>
-									<span class=""></span>
-									<label class="" for="" > Аккумуляторные </label>  
-								</p>
-								<p class="filter-item">
-									<input class="" type="radio" name="radio" id="lan" value="">
-									<span class=""></span>
-									<label class="" for="lan" > Сетевые </label>
-								</p>
+								<ul class="filter__list-radio">
+								<li>
+									<label class="filter-item">
+									<input class="visually-hidden input-radio" type="radio" name="radio" value="acumulators" checked>
+									<span class="checkbox-indicator">Аккумуляторные</span>
+								</label>  
+								</li>
+								<li>
+									<label class="filter-item">
+									<input class="visually-hidden input-radio" type="radio" name="radio" value="lans" disabled>
+									<span class="checkbox-indicator">Сетевые</span>
+									</label>
+								</li>
+								</ul>
 							</fieldset>
-							<button class="" type="submit">Показать</button>
+							<button class="filter-button" type="submit">Показать</button>
 						</form>
 					</section>
 
@@ -184,120 +195,138 @@
 							<ul class="sort__icons">
 								<li class="sort__icon-type">
 									<a href="#">
-										<svg class="icon__selected" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="icon__triangle-selected" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5.662 0l5.5 10h-11" fill="#C5C5C5"/></svg>
 										</a>
 									</li>
 									<li class="sort__icon-type">
 										<a href="#">
-											<svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.081 10L.581 0h11" fill="#C5C5C5"/></svg>
+											<svg class="icon__triangle" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.081 10L.581 0h11" fill="#C5C5C5"/></svg>
 											</a
 											></li>
 										</ul>
 									</section>
 									<h2 class="visually-hidden">Товары</h2>
 											<ul class="products__cards-catalog">
-												<li class="products__card-item">
+												<li class="card__item bfg6000">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg6000" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a>
+													</h3>
 													<del class="del">30500 р.</del>
-													<p class="products__card-button">25500 р.</p>
+													<a class="products__card-button" href="#">25500&nbsp;р.</a>
 												</li>
-												<li class="products__card-item">
+												<li class="card__item bfg6000">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg6000" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a>
+													</h3>
 													<del class="del">30500 р.</del>
-													<p class="products__card-button">25500 р.</p>
+													<a class="products__card-button" href="#">25500&nbspр.</a>
 												</li>
-												<li class="products__card-item new">
+												<li class="card__item bfg6000 new">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg6000" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a>
+													</h3>
 													<del class="del">30500 р.</del>
-													<p class="products__card-button">25500 р.</p>
+													<a class="products__card-button" href="#">25500&nbspр.</a>
 												</li>
 
-												<li class="products__card-item new">
+												<li class="card__item bfg3000 new">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg3000" src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 3000</a></h3>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 3000</a>
+													</h3>
 													<del class="del">22500 р.</del>
-													<p class="products__card-button red-button">15500 р.</p>
+													<a class="products__card-button red-button" href="#">15500&nbspр.</a>
 												</li>
-												<li class="products__card-item">
+												<li class="card__item bfg6000">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg6000" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
-													<del class="del">30500 р.</del>
-													<p class="products__card-button">25500 р.</p>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a>
+													</h3>
+													  <del class="del">30500 р.</del>
+													<a class="products__card-button" href="#">25500&nbspр.</a>
 												</li>
 
-												<li class="products__card-item new">
+												<li class="card__item bfg2000 new">
 													<div class="products__choise last__card">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg2000" src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-													<h3 class="last__product-name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-													<del class="del"></del>
-													<p class="products__card-button">12500 р.</p>
+													<h3 class="last__product-name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 2000</a>
+													</h3>
+													<del class="del visually-hidden"></del>
+													<a class="products__card-button" href="#">12500&nbspр.</a>
 												</li>
 
-												<li class="products__card-item new">
+												<li class="card__item bfg3000 new">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg3000" src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 3000</a></h3>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 3000</a>
+													</h3>
 													<del class="del">22500 р.</del>
-													<p class="products__card-button red-button">15500 р.</p>
+													<a class="products__card-button red-button" href="#">15500&nbspр.</a>
 												</li>
-												<li class="products__card-item">
+												<li class="card__item bfg6000">
 													<div class="products__choise">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg6000" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-													<h3 class="product__name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+													<h3 class="product__name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 6000</a>
+													</h3>
 													<del class="del">30500 р.</del>
-													<p class="products__card-button">25500 р.</p>
+													<a class="products__card-button" href="#">25500&nbspр.</a>
 												</li>
 
-												<li class="products__card-item new">	
+												<li class="card__item bfg2000 new">	
 													<div class="products__choise last__card">
 														<a class="products__choise-button buy__button" href="#">Купить</a>
 														<a class="products__choise-btn bookmarks__button" href="#">В закладки</a>
 													</div>
 													<img class="bosh__bfg2000" src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-													<h3 class="last__product-name"><a class="product__card-title" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-													<del class="del"></del>
-													<p class="products__card-button">12500 р.</p>
+													<h3 class="last__product-name">
+														<a class="product__card-title" href="#">Перфоратор BOSCH BFG 2000</a>
+													</h3>
+													<del class="del visually-hidden"></del>
+													<a class="products__card-button" href="#">12500&nbspр.</a>
 												</li>							
 											</ul>
 
 										<ul class="pagination">
-											<li class="pagination__item red__box">
+											<li class="pagination__item">
 												<a class="pagination__list current__page" href="#">1</a>
 											</li>
-											<li class="pagination__item" >
+											<li class="pagination__item">
 												<a class="pagination__list" href="#">2</a>
 											</li>
 											<li class="pagination__item">
