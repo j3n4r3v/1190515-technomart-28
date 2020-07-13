@@ -100,8 +100,7 @@ body {
 .header {
   font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
-  line-height: 24px;
-
+  line-height: 23px;
   font-weight: normal;
   min-height: 320px;
   padding-bottom: 59px;
@@ -139,7 +138,7 @@ body {
 }
 
 .header__catalog-middle {
- margin-bottom: 39px;
+ margin-bottom: 40px;
 } 
 
 .header__logo img {
@@ -170,7 +169,7 @@ body {
   border: none;
   outline: none;
   flex-grow: 1;
-  padding: 9px 0px 9px 42px;
+  padding: 9px 0px 8px 42px;
 }
 
 .search__input:focus {
@@ -391,7 +390,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-height: 45px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .login__link, .login__registration  {
@@ -555,6 +554,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--basic-blue);
+  min-height: 55px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1167,7 +1167,7 @@ body {
   line-height: 30px;
   color: var(--basic-blue);
   margin: 0;
-  padding-top: 66px;
+  padding-top: 65px;
   padding-bottom: 25px;
   text-transform: uppercase;
 }
@@ -1381,11 +1381,11 @@ body {
 }
 
 .button-slider {
-position: absolute;
-    top: 201px;
-    left: 24px;
+    position: absolute;
+    top: 203px;
+    left: 38px;
     width: 192px;
-    padding: 11px 40px 11px 40px;
+    padding: 12px 40px 8px 40px;
 }
 
 .slider__list-photo {
@@ -1427,6 +1427,7 @@ position: absolute;
   flex-wrap: wrap;
   align-items: center;
   min-height: 88px;
+  padding-top: 1px;
   padding-right: 14px;
   padding-left: 28px;
   margin-bottom: 21px;
@@ -1607,7 +1608,7 @@ position: absolute;
 }
 
 .bfg9000 {
-padding: 8px 18px 20px 18px;
+padding: 8px 18px 19px 18px
 }
 
 .bfg3000 {
@@ -1671,7 +1672,7 @@ margin-bottom: 28px;
 }
 
 .bosh__bfg2000 {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     margin-right: 11px;
 }
 
@@ -1734,9 +1735,8 @@ margin-bottom: 28px;
   text-align: center;
   background-image: url("../img/red-button.png");
   background-repeat: no-repeat;
-  /*  background-position: 0 2px;*/
   color: var(--basic-white);
-  padding: 10px 10px 0 0;
+  padding: 9px 9px 0 0;
   margin: 0;
   margin-left: 12px;
 }
@@ -1752,7 +1752,7 @@ margin-bottom: 28px;
   flex-wrap: wrap;
   min-height: 89px;
   padding-right: 19px;
-  padding-top: 6px;
+  padding-top: 4px;
   background-color: var(--special-white-back);
 }
 
@@ -1839,7 +1839,7 @@ margin-bottom: 28px;
 
 .services__heading-wrapper p {
   width: 400px;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2050,17 +2050,17 @@ margin-bottom: 28px;
 .middle__paragraph {
   width: 385px;
   margin: 0;
- margin-bottom: 19px;
+ margin-bottom: 14px;
 }
 
 .address {
   width: 190px;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 }
 
 .map-zoom {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .footer__logo {
@@ -2109,11 +2109,11 @@ margin-bottom: 28px;
   flex-wrap: wrap;
 }
 .footer__bottom {
-  padding-top: 38px;
+  padding-top: 35px;
 }
 
 .footer__bottom-catalog {
-  padding-top: 36px;
+  padding-top: 35px;
 }
 
 .socials, .list {
@@ -2171,7 +2171,7 @@ margin-bottom: 28px;
 }
 
 .footer__middle-nav {
- padding-top: 36px;
+ padding-top: 34px;
 }
 
 .middle-nav-catalog {
@@ -2192,19 +2192,19 @@ margin-bottom: 28px;
 
 .social-vk {
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: 8px;
 }
 
 .social-fb {
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 16px;
 }
 
 .social-inst {
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 11px;
 }
 
