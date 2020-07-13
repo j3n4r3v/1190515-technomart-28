@@ -139,7 +139,7 @@ body {
 }
 
 .header__catalog-middle {
- margin-bottom: 38px;
+ margin-bottom: 39px;
 } 
 
 .header__logo img {
@@ -249,7 +249,7 @@ body {
 }
 
 .bookmark__count-catalog {
-  padding: 8px 0px 10px 5px;
+  padding: 9px 0px 7px 5px;
   flex-grow: 1;
 }
 
@@ -1093,7 +1093,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
 }
 
 .pagination {
@@ -1155,7 +1155,7 @@ body {
 }
 
 .description {
-  padding-bottom: 69px;
+  padding-bottom: 68px;
   background-color: var(--basic-back);
 }
 
@@ -1167,8 +1167,8 @@ body {
   line-height: 30px;
   color: var(--basic-blue);
   margin: 0;
-  padding-top: 64px;
-  padding-bottom: 26px;
+  padding-top: 66px;
+  padding-bottom: 25px;
   text-transform: uppercase;
 }
 
@@ -1611,11 +1611,11 @@ padding: 8px 18px 20px 18px;
 }
 
 .bfg3000 {
-  padding: 0 20px 21px 18px;
+  padding: 0 20px 20px 18px;
 }
 
 .bfg6000 {
-  padding: 0 21px 21px 20px;
+  padding: 0 21px 20px 20px;
 }
 
 .bfg2000 {
@@ -2069,7 +2069,7 @@ margin-bottom: 28px;
   padding-bottom: 20px;
   background-color: var(--basic-red);
   box-shadow: 0px 5px 0px var(--logo-shadow);
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .footer__logo img {
@@ -2109,7 +2109,7 @@ margin-bottom: 28px;
   flex-wrap: wrap;
 }
 .footer__bottom {
-  padding-top: 37px;
+  padding-top: 39px;
 }
 
 .footer__bottom-catalog {
@@ -2146,8 +2146,36 @@ margin-bottom: 28px;
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 36px;
+  padding-top: 34px;
   padding-left: 22px;
+}
+
+.footer__middle-nav, .middle-nav-catalog{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.footer__middle-nav, .middle-nav-catalog{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.footer__middle-nav {
+ padding-top: 36px;
+}
+
+.middle-nav-catalog {
+   padding-top: 34px;
 }
 
 .social__button {
@@ -2164,19 +2192,19 @@ margin-bottom: 28px;
 
 .social-vk {
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 8px;
 }
 
 .social-fb {
   position: absolute;
-  top: 9px;
+  top: 7px;
   left: 16px;
 }
 
 .social-inst {
   position: absolute;
-  top: 9px;
+  top: 7px;
   left: 11px;
 }
 
