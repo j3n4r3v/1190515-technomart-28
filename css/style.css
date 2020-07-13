@@ -1743,7 +1743,7 @@ margin-bottom: 28px;
 
 .manufacturers {
   background-color: var(--basic-white);
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 
 .manufacturers__wrapper {
@@ -2109,7 +2109,7 @@ margin-bottom: 28px;
   flex-wrap: wrap;
 }
 .footer__bottom {
-  padding-top: 39px;
+  padding-top: 38px;
 }
 
 .footer__bottom-catalog {
