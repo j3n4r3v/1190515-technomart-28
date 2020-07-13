@@ -1,24 +1,23 @@
 
 :root {
-  --basic-red             : #EE3643;
-  --basic-green           : #63A63E;
-  --basic-grey            : #3D546F;
-  --basic-orange          : #FFC047;
-  --basic-grey-dark       : #293449;
-  --basic-blue            : #32425C;
-  --basic-blue-dark       : #405069;
-  --basic-grey-light      : #C5C5C5;
-  --basic-back            : #F1F5F7;
-  --background-cart       : #F1F1F1;
-  --basic-back-plus       : #F3F7F9;
-  --catalog-back-h1       : #F2F6F8;
-  --catalog-back-sort     : #F2F6F8;
-  --basic-white           : #FFFFFF;
-  --basic-black           : #000000;
-  --basic-social          : #212A3A;
-  --basic-border          : #EAEAEA;
-  --basic-slider          : #806E5B;
-
+  --basic-red                : #EE3643;
+  --basic-green              : #63A63E;
+  --basic-grey               : #3D546F;
+  --basic-orange             : #FFC047;
+  --basic-grey-dark          : #293449;
+  --basic-blue               : #32425C;
+  --basic-blue-dark          : #405069;
+  --basic-grey-light         : #C5C5C5;
+  --basic-back               : #F1F5F7;
+  --background-cart          : #F1F1F1;
+  --basic-back-plus          : #F3F7F9;
+  --catalog-back-h1          : #F2F6F8;
+  --catalog-back-sort        : #F2F6F8;
+  --basic-white              : #FFFFFF;
+  --basic-black              : #000000;
+  --basic-social             : #212A3A;
+  --basic-border             : #EAEAEA;
+  --basic-slider             : #806E5B;
   --special-nav              : #1D2739;
   --special-yellow-light     : #FFD180;
   --special-blue             : #3BBCE3;
@@ -35,26 +34,24 @@
   --special-del              : #A9A9A9;
   --special-white-back       : #F9F5F0;
   --special-white-border     : #E5E5E5;
-
   --logo-shadow              : #B52933;
   --special-list-shadow       :rgba(0, 0, 0, 0.15); 
   --special-box-shadow        :rgba(0, 0, 0, 0.25);
   --special-black-transparent :rgba(0, 0, 0, 0.3);
   --form-box-shadow           :rgba(0, 0, 0, 0.75);
-
-  --button-wrapper       :#F4F4F4;
-  --scale-color          :#D7DCDE;
-  --bar-color            :#00CA74;
-  --toggle-color         :#ABABAB;
-  --toggle-shadow        :#E0DDD9;
-  --popup-shadow         :#FF5257;
-  --filter-back          :#F7F3EC;
-  --price-scale          :#444444;
-  --button               :rgba(255,255,255,0.3);
-  --button-hover         :rgba(197,197,197,0.3);
-  --button-active        :rgba(169,169,169,0.3);
-  --button-login         :rgba(0, 0, 0, 0.0001);
-  --button-link-hover    :#CA2C37;
+  --button-wrapper            :#F4F4F4;
+  --scale-color               :#D7DCDE;
+  --bar-color                 :#00CA74;
+  --toggle-color              :#ABABAB;
+  --toggle-shadow             :#E0DDD9;
+  --popup-shadow              :#FF5257;
+  --filter-back               :#F7F3EC;
+  --price-scale               :#444444;
+  --button                    :rgba(255,255,255,0.3);
+  --button-hover              :rgba(197,197,197,0.3);
+  --button-active             :rgba(169,169,169,0.3);
+  --button-login              :rgba(0, 0, 0, 0.0001);
+  --button-link-hover         :#CA2C37;
 }
 
 *,
