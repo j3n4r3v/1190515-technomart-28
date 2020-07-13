@@ -5,7 +5,7 @@
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
 	<header class="header">
@@ -15,15 +15,15 @@
 					<img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
 				</a>
 				<form class="search" action="https://echo.htmlacademy.ru" method="post">
-					<input class="search__input" type="search__field" name="text" id="search" placeholder="Поиск:">
+					<input class="search__input" type="search" name="text" id="search" placeholder="Поиск:">
 					<svg class ="search__icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"/></svg>
 						<label class="visually-hidden" for="search">Поиск</label>
 					</form>
 					<div class="registration">
-						<a href="#" class="btn bookmark__count">Закладки:&nbsp<span>0</span>
+						<a href="#" class="btn bookmark__count">Закладки:&nbsp;<span>0</span>
 						</a>
-						<a href="#" class="btn cart__count">Корзина:&nbsp<span class="count">0</span>
+						<a href="#" class="btn cart__count">Корзина:&nbsp;<span class="count">0</span>
 						</a>
 						<a href="#" class="btn order">Оформить заказ
 						</a>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="container header__wrapper-middle">
 				<p class="info">
-					<i>Интернет-магазин строительных материалов и&nbspинструментов для ремонта</i>
+					<i>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</i>
 				</p>
 				<div class="contacts">
 					<a class="phone" href="tel:+78125550555">
@@ -312,7 +312,7 @@
 							</ul>
 							<a class="button__link red__button-middle" href="#">Подробнее о компании</a>
 						</section>
-						<section>
+						<section class="main-contacts">
 							<h2 class="headline__black">Контакты</h2>
 							<p class="address">
 								Вы можете забрать товар сами, заехав в наш офис:
@@ -321,7 +321,6 @@
 								<img  src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 							</a>
 							<a class="write__us-link red__button-big" href="write-us.html">Заблудились? Напишите нам!</a>
-						</div>
 					</section>
 				</div>
 			</div>
@@ -331,6 +330,7 @@
 		<div class="footer__wrapper-top">
 			<div class="container">
 				<section class="footer__top">
+					<h3 class="visually-hidden">Адрес и Контакты</h3>
 					<div class="footer__address">
 						<a class="footer__logo" href="#">
 							<img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарта">
@@ -378,6 +378,7 @@
 			<div class="footer__wrapper-bottom">
 				<div class="container">
 					<section class="footer__bottom">
+						<h3 class="visually-hidden">Копирайт и Социальные сети</h3>
 						<p class="company__info">
 							© 2010–2019 Компания «Техномарт»
 							Все права защищены
@@ -453,9 +454,9 @@
 				<button class="modal-map-close" type="button">
 					<span class="visually-hidden">Закрыть</span>
 				</button>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619487256967!2d30.321109616311734!3d59.93845598187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1594482332107!5m2!1sru!2sua" width="943" height="442" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619487256967!2d30.321109616311734!3d59.93845598187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1594482332107!5m2!1sru!2sua" width="943" height="460" allowfullscreen></iframe>
 				<p>
-					<img src="img/map popup.png" width="943" height="449" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" >
+					<img src="../1190515-technomart-28/img/map popup.png" width="943" height="449" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" >
 				</p>
 			</section>
 			<!-- Added Cart -->
@@ -471,7 +472,8 @@
 					<a href="#" class="button-link modal-checkout">Оформить заказ</a>
 					<button type="button" class="button button-checkout">Продолжить покупки</button>
 				</div>
+			</section>
 			</div>
-			<script src="js/script.js"></script>
+			<script src="js/script-min.js"></script>
 		</body>
 		</html>
