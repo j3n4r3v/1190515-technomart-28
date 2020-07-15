@@ -8,5 +8,5 @@
 *.sublime*
 node_modules/
 npm-debug.*
-*.ini
+desktop.ini
 Thumbs.db

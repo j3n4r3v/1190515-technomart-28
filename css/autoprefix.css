@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie<=11
+*/
+
+
 
 :root {
   --basic-red                : #EE3643;
@@ -92,6 +100,7 @@ body {
   background-color: var(--basic-back);
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
 }
 
@@ -178,9 +187,27 @@ body {
   background-color: var(--basic-grey-dark);
 }
 
+.search__input::-webkit-input-placeholder, .search__input:hover::-webkit-input-placeholder {
+ color: var(--basic-white);
+}
+
+.search__input::-moz-placeholder, .search__input:hover::-moz-placeholder {
+ color: var(--basic-white);
+}
+
 .search__input::placeholder, 
 .search__input:hover::placeholder {
  color: var(--basic-white);
+}
+
+.search__input:active::-webkit-input-placeholder {
+  color: var(--special-active);
+  background-color: var(--basic-grey-dark);
+}
+
+.search__input:active::-moz-placeholder {
+  color: var(--special-active);
+  background-color: var(--basic-grey-dark);
 }
 
 .search__input:active::placeholder {
@@ -1213,6 +1240,8 @@ body {
 }
 
 .materials__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   background-image: url("../img/icon-1.svg");
   background-position: 213px 31px;
   background-repeat: no-repeat;
@@ -1221,6 +1250,8 @@ body {
 }
 
 .tools__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   background-image: url("../img/icon-2.svg");
   background-position: 194px 34px;
   background-repeat: no-repeat;
@@ -1229,6 +1260,8 @@ body {
 }
 
 .technics__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   background-image: url("../img/icon-3.svg");
   background-position: 191px 31px;
   background-repeat: no-repeat;
@@ -1237,6 +1270,8 @@ body {
 }
 
 .sale__list {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   background-image: url("../img/icon-4.svg");
   background-position: 196px 26px;
   background-repeat: no-repeat;
@@ -1245,6 +1280,8 @@ body {
 }
 
 .delivery__list {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
   background-image: url("../img/icon-5.svg");
   background-position: 191px 33px;
   background-repeat: no-repeat;
@@ -1253,6 +1290,10 @@ body {
 }
 
 .slider {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: slider;
 }
 
@@ -2510,11 +2551,13 @@ body {
 
 .modal-show {
   display: block;
-  animation: zoom 0.6s;
+  -webkit-animation: zoom 0.6s;
+          animation: zoom 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .added-top {
@@ -2554,7 +2597,8 @@ body {
   background-color: transparent;
   border: none;
   z-index: 3;
-  animation: zoom-out 0.6s;
+  -webkit-animation: zoom-out 0.6s;
+          animation: zoom-out 0.6s;
 }
 
 .added-bottom {
@@ -2624,6 +2668,27 @@ body {
 }
 
 /* Animations */
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 @keyframes shake {
   0%,
   100% {
@@ -2646,12 +2711,32 @@ body {
   }
 }
 
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes zoom {
   0% {
     transform: scale(0);
   }
 
   100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes zoom-out {
+  100% {
+    transform: scale(0);
+  }
+
+  0% {
     transform: scale(1);
   }
 }

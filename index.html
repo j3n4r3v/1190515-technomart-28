@@ -5,9 +5,9 @@
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.min.css">
-	<link rel="stylesheet" href="css/style-min.css">
+	<link rel="stylesheet" href="css/autoprefix.css">
 </head>
-<body>	
+<body class="js-index">	
 	<header class="header">
 		<div class="header__wrapper">
 			<div class="container header__wrapper-upper">
@@ -185,7 +185,7 @@
 								<a class="product__card-title" href="#">Перфоратор BOSCH BFG 2000</a>
 							</h3>
 							<del class="del visually-hidden"></del>
-							<a class="products__card-button" href="#">12500 р.</a>
+							<a class="products__card-button card-bfg2000" href="#">12500 р.</a>
 						</li>
 					</ul>
 				</div>
@@ -243,8 +243,8 @@
 			<section class="services">
 				<div class="container">
 					<div class="services__heading-wrapper">
-						<h3>Сервисы</h3>
-						<p>Хороший интернет-магазин отличается от плохого не только ценами!
+						<h3 class="services-heading">Сервисы</h3>
+						<p class="info-services">Хороший интернет-магазин отличается от плохого не только ценами!
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 						<div class="services__slider">
 							<input class="visually-hidden delivery" type="radio" id="delivery" name="services" checked>
@@ -259,8 +259,8 @@
 								<ul class="services__slider-list">
 									<li class="services__slider-item slide" id="slide-delivery">
 										<div class="services__info">
-											<h3>Доставка</h3>
-											<p class="info__delivery">
+											<h3 class="delivery-heading">Доставка</h3>
+											<p class="info-delivery">
 												Мы с удовольствием доставим ваш товар прямо<br>
 												к вашему подъезду совершенно бесплатно!
 												Ведь мы неплохо заработаем,<br>
@@ -269,9 +269,9 @@
 										</div>
 									</li>
 									<li class="services__slider-item slide" id="slide-guarantee">
-										<div class="services__info">
-											<h3>Гарантия</h3>
-											<p class="info__guarantee">
+										<div class="services__info-guarantee">
+											<h3 class="guarantee-heading">Гарантия</h3>
+											<p class="info-guarantee">
 												Если купленный у нас товар поломается или заискрит,
 												а также в случае пожара, спровоцированного его возгоранием, вы всегда можете
 												быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
@@ -280,9 +280,9 @@
 										</div>
 									</li>
 									<li class="services__slider-item slide credit" id="slide-credit">
-										<div class="services__info">
-											<h3>Кредит</h3>
-											<p>Залезть в долговую яму стало проще!<br>
+										<div class="services__info-credit">
+											<h3 class="credit-heading">Кредит</h3>
+											<p class="info-credit">Залезть в долговую яму стало проще!<br>
 											Кредитные консультанты придут вам на помощь.</p>
 											<a class="button__link button__services-credit" href="#">Отправить заявку</a>
 										</div>
@@ -297,7 +297,7 @@
 				<div class="container">
 					<div class="main__info-company">
 						<section class="company__desc">
-							<h2 class="headline__black">Компания «Техномарт»</h2>
+							<h2 class="headline__black headline__technomart">Компания «Техномарт»</h2>
 							<p class="upper__paragraph">
 								Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 							</p>
@@ -459,7 +459,7 @@
 				</p>
 			</section>
 			<!-- Added Cart -->
-			<section class="added__cart">
+			<section class="modal added__cart">
 				<h2 class="visually-hidden">Корзина</h2>
 				<div class="added-top">
 					<p>Товар добавлен в корзину!</p>
@@ -469,10 +469,10 @@
 				</div>
 				<div class="added-bottom">
 					<a href="#" class="button-link modal-checkout">Оформить заказ</a>
-					<button type="button" class="button button-checkout">Продолжить покупки</button>
+					<button type="button" class="button-checkout">Продолжить покупки</button>
 				</div>
 			</section>
 			</div>
-			<script src="js/script-min.js"></script>
+			<script src="js/script.js"></script>
 		</body>
 	</html>
