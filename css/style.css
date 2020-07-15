@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie<=11
+*/
 
 :root {
   --basic-red                : #EE3643;
@@ -83,7 +89,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: normal;
@@ -92,11 +98,12 @@ body {
   background-color: var(--basic-back);
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
 }
 
 .header {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: normal;
@@ -123,19 +130,19 @@ body {
 }
 
 .header__wrapper-middle, .header__catalog-middle {
- background-color: var(--basic-back-plus);
- display: flex;
- min-height: 45px;
- align-items: flex-start;
- flex-wrap: wrap;
+  background-color: var(--basic-back-plus);
+  display: flex;
+  min-height: 45px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .header__wrapper-middle {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .header__catalog-middle {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 } 
 
 .header__logo img {
@@ -178,9 +185,27 @@ body {
   background-color: var(--basic-grey-dark);
 }
 
+.search__input::-webkit-input-placeholder, .search__input:hover::-webkit-input-placeholder {
+  color: var(--basic-white);
+}
+
+.search__input::-moz-placeholder, .search__input:hover::-moz-placeholder {
+  color: var(--basic-white);
+}
+
 .search__input::placeholder, 
 .search__input:hover::placeholder {
- color: var(--basic-white);
+  color: var(--basic-white);
+}
+
+.search__input:active::-webkit-input-placeholder {
+  color: var(--special-active);
+  background-color: var(--basic-grey-dark);
+}
+
+.search__input:active::-moz-placeholder {
+  color: var(--special-active);
+  background-color: var(--basic-grey-dark);
 }
 
 .search__input:active::placeholder {
@@ -267,7 +292,7 @@ body {
 .cart__count-catalog {
   background-color: var(--basic-red);
   width: 136px;
-  padding: 9px 0 9px 13px;
+  padding: 9px 0 10px 13px;
 }
 
 .cart__count::before {
@@ -445,7 +470,7 @@ body {
 
 .buyer__name {
   position: relative;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
@@ -530,7 +555,7 @@ body {
 }
 
 .buyer__link {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -601,7 +626,7 @@ body {
   width: 359px;
   text-transform: uppercase;
   background-color: var(--basic-white);
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .breadcrumbs__item {
@@ -643,7 +668,7 @@ body {
 }
 
 .perforators {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -701,7 +726,7 @@ body {
 }
 
 .filter-manufacturers {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .fieldset__upper, .fieldset__middle, .fieldset__bottom {
@@ -716,7 +741,7 @@ body {
 
 .fieldset__upper {
   margin-bottom: 17px;
-  min-height: 193px;
+  min-height: 194px;
 }
 
 .filter__list-checkbox li {
@@ -751,7 +776,7 @@ body {
   position: relative;
   height: 80px;
   margin-bottom: 8px;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-left: 20px;
   background-color: var(--filter-back); 
   border-radius: 2px;
@@ -1090,7 +1115,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
 }
 
 .pagination {
@@ -1106,22 +1131,19 @@ body {
 
 .pagination__item:not(:first-child) {
   border: 1px solid var(--special-white-border);
-  box-shadow: 0px 4px 4px var(--special-box-shadow);
 }
 
 .pagination__item:not(:first-child):hover {
   border: 1px solid var( --basic-grey-light);
-  box-shadow: 0px 4px 4px var(--special-box-shadow);
 }
 
 .pagination__item:not(:first-child):active {
   border: 1px solid var(--basic-red); 
-  box-shadow: 0px 4px 4px var(--special-box-shadow);
 }
 
 .pagination__item{
   font:inherit;
-  line-height: 18px;
+  line-height: 17px;
   min-width: 38px;
   min-height: 38px;
   background-color: var(--basic-white);
@@ -1152,12 +1174,12 @@ body {
 }
 
 .description {
-  padding-bottom: 67px;
+  padding-bottom: 68px;
   background-color: var(--basic-back);
 }
 
 .bottom__description-perforators {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1167,17 +1189,18 @@ body {
   padding-top: 65px;
   padding-bottom: 26px;
   text-transform: uppercase;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
 }
 
 .bottom__paragraph-perforators {
-  line-height: 25px;
   margin: 0;
+  margin-left: -1px;
   width: 908px;
 }
 
 .first-paragraph {
   padding-left: 1px;
+  margin-bottom: 2px;
 }
 
 .bottom__paragraph-perforators:first-child {
@@ -1213,6 +1236,8 @@ body {
 }
 
 .materials__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   background-image: url("../img/icon-1.svg");
   background-position: 213px 31px;
   background-repeat: no-repeat;
@@ -1221,6 +1246,8 @@ body {
 }
 
 .tools__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   background-image: url("../img/icon-2.svg");
   background-position: 194px 34px;
   background-repeat: no-repeat;
@@ -1229,6 +1256,8 @@ body {
 }
 
 .technics__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   background-image: url("../img/icon-3.svg");
   background-position: 191px 31px;
   background-repeat: no-repeat;
@@ -1237,6 +1266,8 @@ body {
 }
 
 .sale__list {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   background-image: url("../img/icon-4.svg");
   background-position: 196px 26px;
   background-repeat: no-repeat;
@@ -1245,6 +1276,8 @@ body {
 }
 
 .delivery__list {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
   background-image: url("../img/icon-5.svg");
   background-position: 191px 33px;
   background-repeat: no-repeat;
@@ -1253,12 +1286,16 @@ body {
 }
 
 .slider {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: slider;
 }
 
 .advise__recommendation-list h3 {
   width: 135px;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -1272,7 +1309,7 @@ body {
 }
 
 .recommendation__list-button {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1406,7 +1443,7 @@ body {
 .slider__list-photo p {
   margin: 0;
   margin-left: 24px;
-  padding: 0;  font-family: "Cuprum","Arial",sans-serif;
+  padding: 0;  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -1432,7 +1469,7 @@ body {
 }
 
 .headline__blue, .headline__black, .headline-black-little {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1461,11 +1498,11 @@ body {
 .headline-black-little {
   width: 300px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .button__link, .write__us-link {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   border-radius: 3px;
@@ -1532,10 +1569,10 @@ body {
 .new::after {
   content: "";
   position: absolute;
-  background: url("../img/new.png");
+  background: url("../img/new.svg");
   width: 70px;
   height: 70px;
-  top: 0;
+  top: -1px;
   right: 0;
 }
 
@@ -1559,7 +1596,7 @@ body {
 .bookmarks__button {
   width: 135px;
   height: 38px;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1630,7 +1667,7 @@ body {
 }
 
 .bfg2000 {
-  padding: 0 18px 18px 16px;
+  padding: 5px 18px 16px 16px;
 }
 
 .card__item:hover img,
@@ -1687,14 +1724,14 @@ body {
 
 .last__product-name {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
   text-align: center;
 }
 
 .product__name {
   margin: 0;
   margin-bottom: 5px;
-  font-family:"PT Sans","Arial",sans-serif;
+  font-family:"PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1708,7 +1745,7 @@ body {
 }
 
 .product__card-title {
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height:21px;
   font-weight: bold;
@@ -1716,7 +1753,7 @@ body {
 }
 
 .del, .products__card-button {
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1758,7 +1795,7 @@ body {
 
 .card-bfg2000 {
   position: relative;
-  top: -2px;
+  top: -3px;
   left: 0px;
 }
 
@@ -1846,7 +1883,8 @@ body {
 
 .info-services {
   width: 400px;
-  margin-bottom: 70px;
+  margin-bottom: 71px;
+  margin-left: -1px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1873,7 +1911,7 @@ body {
 .services__controls-wrapper label {
   margin-bottom: 1px;
   padding: 14px 140px 17px 22px;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -1937,7 +1975,7 @@ body {
   background: url("../img/guatantee.png");
   width: 465px;
   height: 285px;
-  top: 7px;
+  top: 2px;
   right: -84px;
 }
 
@@ -1947,21 +1985,21 @@ body {
   background: url("../img/credit.png");
   width: 465px;
   height: 285px;
-  top: 5px;
+  top: 3px;
   right: -10px;
 }
 
 .services__info {
   position: relative;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 .services__info-guarantee {
-  padding-top: 8px;
+  padding-top: 2px;
 }
 
 .services__info-credit {
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 .delivery-heading, .guarantee-heading, .credit-heading, .services-heading {
@@ -1969,7 +2007,7 @@ body {
   padding: 0;
   color: var(--basic-blue);
   text-transform: uppercase;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 32px;
@@ -1983,11 +2021,11 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
 }
 .services-heading {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .delivery-heading {
-  margin-bottom: -3px;
+  margin-bottom: -2px;
 }
 
 .guarantee-heading {
@@ -2017,7 +2055,7 @@ body {
 .button__services-credit {
   position: absolute;
   width: 195px;
-  top: 139px;
+  top: 137px;
   left: 0;
   padding: 10px 43px 10px 46px;
 }
@@ -2051,7 +2089,7 @@ body {
 .delivery__line {
   position: relative;
   padding-left: 37px; 
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
@@ -2077,18 +2115,20 @@ body {
 }
 
 .upper__paragraph{
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .middle__paragraph {
   width: 385px;
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  margin-left: -1px;
 }
 
 .address {
   width: 190px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  margin-left: -1px;
 }
 
 .map-zoom {
@@ -2100,7 +2140,7 @@ body {
   width: 220px;
   background-color: var(--basic-red);
   box-shadow: 0px 5px 0px var(--logo-shadow);
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
  .footer__logo {
@@ -2148,11 +2188,13 @@ body {
   flex-wrap: wrap;
 }
 .footer__bottom {
-  padding-top: 36px;
+  padding-top: 37px;
+  padding-bottom: 29px;
 }
 
 .footer__bottom-catalog {
-  padding-top: 35px;
+  padding-top: 36px;
+  padding-bottom: 30px;
 }
 
 .socials, .list {
@@ -2161,13 +2203,21 @@ body {
   padding: 0;
 }
 
-.footer__menu-nav {
+.footer__menu-nav, .footer__catalog-nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 547px;
-  padding-top: 38px;
 }
+
+.footer__menu-nav {
+  padding-top: 37px;
+}
+
+.footer__catalog-nav {
+    padding-top: 36px;
+}
+
 
 .footer__top-nav {
   display: flex;
@@ -2214,8 +2264,8 @@ body {
   position: relative;
   display: block;
   height: 41px;
-  width: 43px;
-  margin-right: 2px;
+  width: 42px;
+  margin-right: 3px;
   background-color: var(--basic-social);
   border-radius: 50%;
 }
@@ -2229,13 +2279,13 @@ body {
 .social-fb {
   position: absolute;
   top: 9px;
-  left: 16px;
+  left: 15px;
 }
 
 .social-inst {
   position: absolute;
   top: 9px;
-  left: 11px;
+  left: 10px;
 }
 
 .social__button:hover,
@@ -2247,7 +2297,7 @@ body {
 .btn__special {
   color: var(--basic-background);
   width:  150px;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -2265,7 +2315,7 @@ body {
 .footer__contacts {
   width: 327px;
   margin: 0;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -2273,7 +2323,7 @@ body {
 }
 
 .btn__yellow {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -2294,31 +2344,28 @@ body {
   color: var(--basic-white);
   margin: 0;
   margin-right: 162px;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  margin-left: 1px;
 }
 
 .socials {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 117px;
+  margin-right: 116px;
 }
 
-.developer {
+/*.developer {
   display: flex;
   flex-wrap: wrap;
   width: 296px;
-  font-family: "Cuprum","Arial",sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-}
+}*/
 
 .developer__info {
   margin: 0;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2406,7 +2453,7 @@ body {
 }
 
 .modal__form-name span, .modal__form-email span, .modal__form-feedback span {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2421,7 +2468,7 @@ body {
   margin-bottom: 13px;
   margin-top: 10px;
   border-radius: 2px;
-  border: 2px solid var( --basic-grey-light);
+  border: 2px solid var(--basic-grey-light);
 }
 
 .form-question {
@@ -2436,7 +2483,7 @@ body {
   margin-top: 14px;
   resize: none;
   border-radius: 2px;
-  border: 2px solid var( --basic-grey-light);
+  border: 2px solid var(--basic-grey-light);
 }
 
 .button-wrapper {
@@ -2450,7 +2497,7 @@ body {
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-transform: uppercase;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2510,11 +2557,13 @@ body {
 
 .modal-show {
   display: block;
-  animation: zoom 0.6s;
+  -webkit-animation: zoom 0.6s;
+          animation: zoom 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .added-top {
@@ -2524,7 +2573,7 @@ body {
 }
 
 .added__cart p {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -2554,7 +2603,8 @@ body {
   background-color: transparent;
   border: none;
   z-index: 3;
-  animation: zoom-out 0.6s;
+  -webkit-animation: zoom-out 0.6s;
+          animation: zoom-out 0.6s;
 }
 
 .added-bottom {
@@ -2567,7 +2617,7 @@ body {
 }
 
 .modal-checkout {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2588,7 +2638,7 @@ body {
 }
 
 .button-checkout {
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2624,6 +2674,27 @@ body {
 }
 
 /* Animations */
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 @keyframes shake {
   0%,
   100% {
@@ -2646,7 +2717,7 @@ body {
   }
 }
 
-@keyframes zoom {
+@-webkit-keyframes zoom {
   0% {
     transform: scale(0);
   }
@@ -2656,12 +2727,12 @@ body {
   }
 }
 
-@keyframes zoom-out {
-  100% {
+@keyframes zoom {
+  0% {
     transform: scale(0);
   }
 
-  0% {
+  100% {
     transform: scale(1);
   }
 }
