@@ -75,13 +75,22 @@ img {
   max-width: 100%;
 }
 
-.visually-hidden {
+input, textarea, select, button {
+  font: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -1651,7 +1660,6 @@ body {
   align-items: center;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border);
-  margin-bottom: 20px;
 }
 
 .bfg9000 {
@@ -2355,13 +2363,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: 116px;
+  width: 135px;
 }
-
-/*.developer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 296px;
-}*/
 
 .developer__info {
   margin: 0;
