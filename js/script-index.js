@@ -89,19 +89,19 @@ var buyClose = buyPopup.querySelector(".modal__close-cart");
 var chosenProducts = document.querySelector(".cart__count");
 var chosenProductsQuantity = 0;
 
-function closePopup (popup, evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-}
+function closePopup (popup) {
 
-function putProductToCart () {
-  chosenProducts.classList.add("btn-cart-not-empty");
-  chosenProducts.innerHTML = "Корзина: " + chosenProductsQuantity;
+  popup.classList.remove("modal-show");
 }
 
 if(!isIndex) {
   chosenProductsQuantity = 10;
   putProductToCart();
+}
+
+function putProductToCart () {
+  chosenProducts.classList.add("btn-cart-not-empty");
+  chosenProducts.innerHTML = "Корзина: " + chosenProductsQuantity;
 }
 
 for (i = 0; i < buyLinks.length; i++) {
@@ -115,7 +115,7 @@ for (i = 0; i < buyLinks.length; i++) {
 }
 
 buyContinue.addEventListener("click", function (evt) {
-  closePopup(buyPopup, evt);
+  closePopup(buyPopup);
 });
 
 buyClose.addEventListener("click", function (evt) {
@@ -126,14 +126,13 @@ buyClose.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (buyPopup.classList.contains("modal-show")) {
-      closePopup(buyPopup, evt);
+      closePopup(buyPopup);
     }
   }
 });
 
 var bookmarks = document.querySelector(".bookmark__count");
 var addToBookmarksButtons = document.querySelectorAll(".bookmarks__button");
-
 var bookmarksQuantity = 0;
 
 for (i = 0; i < addToBookmarksButtons.length; i++) {
