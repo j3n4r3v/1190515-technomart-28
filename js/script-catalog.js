@@ -15,8 +15,12 @@ const closePopup = (popup) => {
   popup.classList.remove("modal-show");
 }
 const putProductToCart = () => {
-  chosenProducts.classList.add("btn-cart-not-empty");
   countBuyProducts.textContent = chosenProductsQuantity;
+}
+
+if (countBuyProducts.textContent > 0) {
+  chosenProducts.classList.add("btn-cart-not-empty");
+  putProductToCart();
 }
 
 buyLinks.forEach((item) => {
